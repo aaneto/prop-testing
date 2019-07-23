@@ -1,0 +1,15 @@
+{
+  "name": "property-testing",
+  "version": "0.1.0",
+  "description": "Property based testing sample repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Adilson Neto",
+  "license": "MIT",
+  "dependencies": {
+    "fast-check": "^1.16.0",
+    "mocha": "^6.2.0"
+  }
+}
