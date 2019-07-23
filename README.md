@@ -13,3 +13,12 @@ The presentation will follow this structure:
 - Demo using repository code
 
 The content used to present those topics can be found at the presentations folder.
+
+## Running the tests
+
+To run the tests you will have to install the dependencies and run the tests with:
+
+```bash
+npm install
+npm test
+```
