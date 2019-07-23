@@ -28,7 +28,7 @@ We have several benefits from using Unit Tests;
 - Debugging is easier.
 - Code becomes more reliable
 
-![Dumbledore Saying 'Unit Tests Shall Pass!'](UnitTest.jpeg)
+![Dumbledore Saying 'Unit Tests Shall Pass!'](resources/UnitTest.jpeg)
 
 
 ## Integration Testing
@@ -49,7 +49,7 @@ We have 4 approaches for this methodology:
 
 - Sandwich: Combined Top Down with Bottom Up
 
-![Doors that work in separate but are too close to open together](integration.gif)
+![Doors that work in separate but are too close to open together](resources/integration.gif)
 
 ## System Testing
 
@@ -59,7 +59,7 @@ As a analogy made in integration testing, is like testing the finished pen at th
 
 Normally it’s used the Black Box Testing methodology since the number of variations are tremendous. Usually performed by testers, since it requires some expertise in manual testing.
 
-![Meme with caption 'not sure if quality is really good or testing was really lousy'](SystemTesting.jpg)
+![Meme with caption 'not sure if quality is really good or testing was really lousy'](resources/SystemTesting.jpg)
 
 ## Acceptance Testing
 
@@ -74,4 +74,4 @@ There are Internal and External Acceptance Tests.
 - Internal: Alpha Testing made by some select users inside the company and with strict regulations
 - External: Made by a small user group with a tester as lead.
 
-![Meme with caption 'USER ACCEPTANCE TESTING. You keep using that word, I do not think it means what you think it means.'](AcceptanceTesting.jpeg)
+![Meme with caption 'USER ACCEPTANCE TESTING. You keep using that word, I do not think it means what you think it means.'](resources/AcceptanceTesting.jpeg)
