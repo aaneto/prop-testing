@@ -43,7 +43,7 @@ class BrokenMovingAverage2 {
     }
 }
 
-describe('properties', () => {
+describe('test moving averages properties', () => {
     let validOutput = (indicator, num) => {
         let output = indicator.next(num);
 
