@@ -1,43 +1,42 @@
 # Property Based Testing
 
-## Contract Based Programming
+Usually, in example-based tests, we throw our code against all the nastiest situations we can imagine in an attempt to improve quality and resilience. This approach is useful if our objective is to avoid regressing on bad behavior we already know.
 
-Every time we write code, we expect it to solve a well defined, real world problem,
-to that end we create code to test that our code behave as expected to some degree, such as unit tests, integration tests and acceptance tests.
-
-Implicitly, we have conditions that must be satisfied before and after a program executes, after all, the job of every program is to read some data and spit some data back. Contracts are a way of defining real-world dynamic behaviour inside our code.
-
-Inside a computer program, contracts can never be broken and it they are, the program execution must be stopped immediately.
-
-### Precondition Contracts
-
-The conditions required for a function or unit of code to work properly, a broken precondition means the caller made a mistake.
-
-### Postcondition Contracts
-
-The conditions that a piece of code guarantee to be true, given the preconditions. A failure to fulfill a postcondition contract means something is wrong with the function implementation, this
-is the heart of property based testing.
-
-## What is property based testing
-
-Unit tests are a form of example testing, we avoid regression of a behaviour after fixing or implementing it by creating an unit test, still, there can be a set of problems related to other set of inputs. Property based testing is based on the idea of generating test cases and checking if some invariant is upheld.
-
-This way, we only need to know the preconditions and postconditions of a piece of code to generate automated tests for it. This is necessary because programmers cannot possibly think of all the possible cases where things can go wrong if the input is large enough.
-
-![Bob Ross Meme with caption: 'We don't make mistakes - we just make happy accidents.'](resources/bobross.gif)
+Property-based testing can help us prevent errors we could not imagine with our monkey brains. But to achieve that, we first must go through a few concepts.
 
 
+## Contracts
+
+Contracts are a way of expressing well defined real-world rules into our code in a way that's relevant to our business.
+
+The contracts must be well-defined and provable and at the same time reflect real-world business rules. There are many types of contracts but the ones we will care about here are postconditions and preconditions of a piece of code.
+
+## Preconditions
+
+Preconditions are properties that must be true for a piece of code to give meaningful value, such as:
+
+- A function that calculates the sum of a list should receive a list with only numbers
+- A function that calculates the length of a string must receive a string
+
+If we fulfill these contracts, our function will probably give us something meaningful and valid.
+
+
+## Postconditions
+
+Postconditions, on the other hand, are properties that a piece of code should output if provided with valid input, for example:
+
+- A function that can crash with some valid input is not sound
+- A function that provides a valid output for EVERY input is certainly sound
+
+
+## Please define property based tests!
+
+With those concepts in our heads, property-based tests are tests in which we generate random input based on our preconditions and check if the postcondition still holds for all of them!
+
+Having defined meaningful contracts, our framework of choice can generate hundreds or even thousands of random examples to put our code to test.
 
 
 ## What are the use cases?
-
-Usually, pure and idempotent functions are good candidates for property based checks, it's also easier to setup preconditions to input if those are of a know type.
-
-
-
-
-
+Logic-heavy and well-defined code are perfect subjects for this kind of test. Below are some endorsements for the python hypothesis library.
 
 [Use Cases - Hypothesis](https://hypothesis.readthedocs.io/en/latest/endorsements.html)
-
-## Examples
