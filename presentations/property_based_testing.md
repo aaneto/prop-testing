@@ -4,6 +4,7 @@ Usually, in example-based tests, we throw our code against all the nastiest situ
 
 Property-based testing can help us prevent errors we could not imagine with our monkey brains. But to achieve that, we first must go through a few concepts.
 
+![Meme with four images with captions: 'WRITE TESTS', 'TEST PASS', 'CODE FAILS', 'CODE FAILS?'](resources/code-fails.png)
 
 ## Contracts
 
@@ -35,6 +36,7 @@ With those concepts in our heads, property-based tests are tests in which we gen
 
 Having defined meaningful contracts, our framework of choice can generate hundreds or even thousands of random examples to put our code to test.
 
+![Bob Ross saying 'We don't make mistakes - we just have happy accidents.'](resources/bobross.gif)
 
 ## What are the use cases?
 Logic-heavy and well-defined code are perfect subjects for this kind of test. Below are some endorsements for the python hypothesis library.
